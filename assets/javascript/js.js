@@ -1,18 +1,6 @@
 
 $(document).ready(function () {
 
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBSuG4ZNaUt9ZWeVmGmc8N7UCzo11Sc0UQ",
-    authDomain: "project-1-1545354673886.firebaseapp.com",
-    databaseURL: "https://project-1-1545354673886.firebaseio.com",
-    projectId: "project-1-1545354673886",
-    storageBucket: "",
-    messagingSenderId: "585680953544"
-  };
-  firebase.initializeApp(config);
-  var database = firebase.database();
-
   //==============================
   // Click Search Meal(Left side)
   //==============================
