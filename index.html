@@ -24,6 +24,9 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
     crossorigin="anonymous">
   <link rel="shortcut icon" href="assets/images/img.png">
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 </head>
 
 <body>
@@ -74,7 +77,7 @@
         <div id="left-default">
           <h5> meal <i class="fas fa-utensils"></i></h5>
           <form class="input-group mb-3 form-set">
-            <input type="text" name="search-term" placeholder="Meal Name" class="drink-search-input" id="food-search">
+            <input type="text" name="search-term" placeholder="Meal Name" class="search-input" id="food-search">
             <input type="submit" value="Go" class="btn search-button transparent" id="food-search-button">
           </form>
           <button type="button" class="btn waves-effect waves-light random-button" id="food-random-button">Random<i class="fas fa-dice"></i></button>
@@ -93,7 +96,7 @@
         <div id="right-default">
           <h5> drink<i class="fas fa-cocktail"></i></h5>
           <form class="form-set input-group mb-3">
-            <input type="text" name="search-term" placeholder="Drink Name" class="drink-search-input" id="drink-search">
+            <input type="text" name="search-term" placeholder="Drink Name" class="search-input" id="drink-search">
             <input type="submit" value="Go" class="btn search-button transparent" id="drink-search-button">
           </form>
           <button type="button" class="btn waves-effect waves-light random-button" id="drink-random-button">Random<i
@@ -104,6 +107,7 @@
         <!-- when click "FOOD(left side)", show information here!!! -->
         <div class="results" id="food-results"></div>
         <div class="results" id="food-recommend"></div>
+
 
         <!--  when click search: show photo and video of drink -->
         <img class="results" id="drink-photo" src="#" alt="">
