@@ -12,8 +12,6 @@ $(document).ready(function () {
     if (searchTerm.length > 0) {
       $("#drink-video").css("display", "none");
       $("#food-video").css("display", "block");
-      $("#right-side").css("background-image", "url(#)");
-      $("#right-side").css("background-color", "black");
 
       var foodQueryURL = "https://www.themealdb.com/api/json/v1/1/search.php?s=" + searchTerm;
       $.ajax({
@@ -38,6 +36,8 @@ $(document).ready(function () {
           })
 
           // right side changes:
+          $("#right-side").css("background-image", "url(#)");
+          $("#right-side").css("background-color", "black");
           $("#right-default").hide();
           $("#food-results").empty();
           $("#food-results").append("<h4></br>Meal: " + response.meals[0].strMeal + "</h4>");
@@ -161,8 +161,7 @@ $(document).ready(function () {
   $("#drink-search-button").on("click", function () {
     $("#food-video").css("display", "none");
     $("#drink-video").css("display", "block");
-    $("#left-side").css("background-image", "url(#)");
-    $("#left-side").css("background-color", "black");
+
     $(".food-alert").empty();
     event.preventDefault();
 
@@ -175,6 +174,8 @@ $(document).ready(function () {
       }).then(function (response) {
         $("#drink-search").val("");
         if (response.drinks !== null) {
+          $("#left-side").css("background-image", "url(#)");
+          $("#left-side").css("background-color", "black");
           $("#drink-photo").attr("src", response.drinks[0].strDrinkThumb);
 
           // left side changes:
