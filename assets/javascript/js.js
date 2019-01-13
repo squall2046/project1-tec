@@ -98,7 +98,6 @@ $(document).ready(function () {
     $("#right-side").css("background-image", "url(#)");
     $("#right-side").css("background-color", "black");
     $(".video-play").empty();
-    $(".food-alert").empty();
     event.preventDefault();
 
     $.ajax({
@@ -161,8 +160,6 @@ $(document).ready(function () {
   $("#drink-search-button").on("click", function () {
     $("#food-video").css("display", "none");
     $("#drink-video").css("display", "block");
-
-    $(".food-alert").empty();
     event.preventDefault();
 
     searchTerm = $("#drink-search").val();
@@ -225,7 +222,6 @@ $(document).ready(function () {
     $("#drink-video").css("display", "block");
     $("#left-side").css("background-image", "url(#)");
     $("#left-side").css("background-color", "black");
-    $(".food-alert").empty();
     event.preventDefault();
 
     $.ajax({
