@@ -1,7 +1,13 @@
-# 🍹Recipe RoundUp
+# 🍹Recipe RoundUp (TEC Group)
 Plan your next meal and drink by searching for great recipes. 
+
+![App Sample](/assets/images/food.git.gif)
+
 ## 🍸Synopsis:
 Recipe RoundUp is a website where the user can get dinner and drink recipes and ideas all in one site. The features of Recipe RoundUp are: <ul>
+  
+![App Sample](/assets/images/drink.git.gif)
+
 <li>Easy to use</li>
 <li>Clear interface with Animations effects</li>
 <li>Access the information quickly</li>
@@ -20,3 +26,8 @@ Recipe RoundUp is a website where the user can get dinner and drink recipes and 
 
 ## 🍸Author:
 * [The Expert Coders](https://squall2046.github.io/Meal-Drink/)
+- Abdullah Alamri
+- David Byrd
+- Isaac Wu
+- James Lamb
+
